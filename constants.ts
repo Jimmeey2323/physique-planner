@@ -25,7 +25,9 @@ export const MONTHS_DATA: MonthData[] = [
         "finalPriceBengaluru": 10499,
         "marketingCollateral": "Email campaign, WhatsApp blasts, Instagram stories with testimonials",
         "targetUnitsMumbai": 30,
-        "targetUnitsBengaluru": 15
+        "targetUnitsBengaluru": 15,
+        "collateralChannels": { "whatsapp": true, "email": true, "inStudio": true },
+        "collateralTypes": { "tentCards": true, "imageCreative": true, "emailTemplate": true }
       },
       {
         "id": "jan_offer_2",
@@ -49,7 +51,7 @@ export const MONTHS_DATA: MonthData[] = [
         "targetUnitsBengaluru": 5
       }
     ],
-    "summary": "Critical acquisition month focusing on aggressive newcomer conversion and maximizing \"Cash Upfront\" via annual lock-ins. Targeting 35% YoY growth.",
+    "summary": "January launches with Resolution Rehab (₹11,999 1-month unlimited) to capture New Year momentum, plus Buy 3 Get 4 quarterly bundles for commitment-seekers. Focus on newcomer conversion with welcome kits and 21-Day Challenges driving habit formation and long-term retention.",
     "operations": [
       {
         "week": "Week 1",
@@ -214,7 +216,7 @@ export const MONTHS_DATA: MonthData[] = [
         "targetUnitsBengaluru": 2
       }
     ],
-    "summary": "Transitioning January trialists into long-term members while utilizing Valentine's Day as a high-conversion window. Anti-Valentine's offers included.",
+    "summary": "February leverages Valentine's psychology with Mutual Accountability duo passes (50% off partner memberships), empowering events like Feminism & Foam Rolling studio bookouts, and Anti-Valentine's Revenge Body programs. Self-love packages with retail credits target singles investing in themselves.",
     "operations": [
       {
         "week": "Week 1",
@@ -378,7 +380,7 @@ export const MONTHS_DATA: MonthData[] = [
         "targetUnitsBengaluru": 25
       }
     ],
-    "summary": "Bridging Q1 to Q2. Converting momentum from Feb into long-term commitment. Focus on International Women's Day with flash sale activation.",
+    "summary": "March celebrates International Women's Day with Corporate Backstabber premium packages, Squad Goals 12-class group packs, and the explosive BIG BITCH ENERGY WEEK flash sale. Main Character Meltdown Marathon on March 8th drives urgency with 8-class packs and private sessions.",
     "operations": [
       {
         "week": "All Month",
@@ -656,7 +658,7 @@ export const MONTHS_DATA: MonthData[] = [
         "targetUnitsBengaluru": 25
       }
     ],
-    "summary": "Grand 8th Anniversary Jubilee with gamified offers. Interactive experiences including Jackpot Wheel, Double or Nothing Challenge, and Comeback Claw Machine.",
+    "summary": "The 8th Anniversary Gala Month features gamified experiences: Desperation Spin daily wheel for pricing unlocks, Financial Roulette weekly mystery rewards, and the Finally Commit 8-month transformation program. VIP Inner Circle founding memberships (limited to 88) with locked rates and exclusive quarterly privileges.",
     "operations": [
       {
         "week": "Pre-Launch (Mar 25-31)",
