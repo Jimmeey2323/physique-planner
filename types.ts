@@ -10,7 +10,7 @@ export interface FinancialTarget {
 export interface Offer {
   id?: string; // Optional for initial data, required for state
   title: string;
-  type: 'New' | 'Hero' | 'Retention' | 'Flash' | 'Event' | 'Student' | 'Corporate' | 'Lapsed';
+  type: 'New' | 'Hero' | 'Retention' | 'Flash' | 'Event' | 'Student' | 'Corporate' | 'Lapsed' | 'Frequency Builder' | 'Hero Long-Term' | 'Event-Led Conversion' | 'Gamified Lead Capture' | 'Retention + Annual Push' | 'Ultra-VIP' | 'High-Touch Program';
   description: string;
   pricing: string;
   priceMumbai?: number;
