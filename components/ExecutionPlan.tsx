@@ -1876,24 +1876,25 @@ export const ExecutionPlan: React.FC<ExecutionPlanProps> = ({ month }) => {
         </div>
       )}
 
-      {/* Add New Custom Section */}
-      <div className="bg-white rounded-xl border-2 border-green-200 overflow-hidden shadow-sm">
-        <div className="bg-white px-6 py-4 border-b-2 border-green-200 flex items-center justify-between">
-          <div>
-            <h4 className="text-lg font-bold text-green-700 flex items-center gap-2">
-              <Plus className="w-5 h-5 text-green-600" />
-              Add New Section
-            </h4>
-            <p className="text-xs text-gray-600 mt-1">Create custom sections for additional planning needs</p>
+      {/* Add New Custom Section - Admin Only */}
+      {isAdmin && (
+        <div className="bg-white rounded-xl border-2 border-green-200 overflow-hidden shadow-sm">
+          <div className="bg-white px-6 py-4 border-b-2 border-green-200 flex items-center justify-between">
+            <div>
+              <h4 className="text-lg font-bold text-green-700 flex items-center gap-2">
+                <Plus className="w-5 h-5 text-green-600" />
+                Add New Section
+              </h4>
+              <p className="text-xs text-gray-600 mt-1">Create custom sections for additional planning needs</p>
+            </div>
+            <button
+              onClick={() => setShowNewCustomSection(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <Plus className="w-4 h-4" />
+              Create Section
+            </button>
           </div>
-          <button
-            onClick={() => setShowNewCustomSection(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            Create Section
-          </button>
-        </div>
         
         {showNewCustomSection && (
           <div className="p-6 bg-gray-50">
@@ -1967,10 +1968,12 @@ export const ExecutionPlan: React.FC<ExecutionPlanProps> = ({ month }) => {
             </div>
           </div>
         )}
+        </div>
+      )}
 
-        {/* Add New Marketing Collateral Modal */}
-        {showNewMarketing && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      {/* Add New Marketing Collateral Modal */}
+      {showNewMarketing && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-2xl p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold text-gray-800">Add Creative Asset</h3>
@@ -2117,7 +2120,6 @@ export const ExecutionPlan: React.FC<ExecutionPlanProps> = ({ month }) => {
             });
           }}
         />
-      </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import { neon } from '@neondatabase/serverless';
 
 // Neon database connection - using environment variable
-const DATABASE_URL = import.meta.env.VITE_DATABASE_URL || 'postgresql://neondb_owner:npg_adL9B0uIREhP@ep-dry-sound-a15m8a9a-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require';
+// @ts-ignore - Vite env types
+const DATABASE_URL = import.meta.env?.VITE_DATABASE_URL || 'postgresql://neondb_owner:npg_adL9B0uIREhP@ep-dry-sound-a15m8a9a-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require';
 
 if (!DATABASE_URL) {
   console.error('⚠️ VITE_DATABASE_URL environment variable is not set!');

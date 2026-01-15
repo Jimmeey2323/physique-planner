@@ -346,8 +346,6 @@ const DashboardContent: React.FC = () => {
         className={`bg-white border-r border-gray-200 md:h-screen md:sticky md:top-0 z-20 flex-shrink-0 flex flex-col shadow-[4px_0_24px_-12px_rgba(0,0,0,0.1)] transition-all duration-300 ${
           sidebarCollapsed ? 'md:w-20' : 'md:w-72'
         } w-full`}
-        onMouseEnter={() => setSidebarCollapsed(false)}
-        onMouseLeave={() => setSidebarCollapsed(true)}
       >
         <div className="p-6 border-b border-gray-100 bg-white">
           {!sidebarCollapsed ? (
@@ -367,6 +365,17 @@ const DashboardContent: React.FC = () => {
               </div>
             </div>
           )}
+        </div>
+
+        {/* Toggle Button */}
+        <div className="px-3 pt-3 flex justify-center">
+          <button
+            onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+            className="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-500 hover:text-gray-700"
+            title={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+          >
+            {sidebarCollapsed ? <ChevronRight className="w-5 h-5" /> : <ChevronLeft className="w-5 h-5" />}
+          </button>
         </div>
 
         {/* Admin Badge in Sidebar */}
