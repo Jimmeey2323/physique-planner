@@ -305,7 +305,7 @@ const DashboardContent: React.FC = () => {
   const [showExportModal, setShowExportModal] = useState(false);
   const [activeTab, setActiveTab] = useState<'monthly' | 'yearly'>('monthly');
   const [hideCancelled, setHideCancelled] = useState(true);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
   
   const selectedMonth = data.find(m => m.id === selectedMonthId) || data[0];
   
