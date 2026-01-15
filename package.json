@@ -8,6 +8,13 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "build:dev": "vite build --mode development",
+  "build:prod": "vite build --mode production",
+  "preview:dev": "vite preview --mode development",
+  "preview:prod": "vite preview --mode production",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix",
+  "test": "vitest",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "docx": "^9.5.1",
